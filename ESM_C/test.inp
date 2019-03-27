@@ -1,0 +1,47 @@
+# This is an input file for the Squaraine program using type method
+# To run the program, from the command line (Development Command Prompt) 
+# enter the program name giving the name of the input file as the first argument
+#
+# Any line starting with a '#' will be ignored
+# This program is only good for nmax<=4
+# Parameters
+task_title      dimer_rotate180_test     #Name of the run
+nmax            2           #number of chromophores
+#es_zmax         3           #N, Z
+#ct_state        .false.     #A, C
+vibmax         0           #maximum vibrational quanta allowed in a state
+sys_vibmax      0           #maximum vibrational quanta allowed in a system
+nz              5400.00     #Ion pair energy in cm-1
+tz               7600.00     #Intramolecule charge transfer in cm-1
+#nct             20000.0    #charge transfer state energy
+#tct             3050.0     #intermolecular charge transfer
+lambda_n        0.000        #potential well shift of the neutral state
+lambda_z1        1.100        #potential well shift of the zwitter1 state
+lambda_z2        -1.100        #potential well shift of the zwitter2 state
+#lambda_a        0.860        #potential well shift of the antion state
+#lambda_c        0.860        #potential well shift of the cation state
+abs_lw            400.00        #Absorption linewidth in cm-1
+spec_step        5000        #number of spectrum points (res.)
+spec_start_ab        5000.0        #first abs spec point in cm-1
+spec_end_ab        30000.0    #last abs spec point in cm-1
+spec_start_pl        0000.0    #first pl spec point in cm-1
+spec_end_pl        30000.0    #last pl spec point in cm-1
+calc_pl            .true.        #Calculate the pl spectrum
+lorentzian        .false.        #set lineshape to gaussian to gaussian if false
+periodic        .false.        #false when open boundary condition
+#x_offset        3.4100        #offset in the x axis
+#y_offset        0.0000        #offset in the y axis
+#z_offset        1.8100        #offset in the z axis
+#armlength        8.3820        #distance between the donor and acceptor
+agg_angle        180.000        #angle along first two molecules
+#rotate_angle      0.0        #rotation angle to show the Davydov component
+dielectric        1.600        #the dielectric constant
+hw            1200.0        #vibrational energy
+no_frenkel        .false.        #no frenkel coupling if true
+#nearest_neighbor    .false.        #calc from the nearest neighbor molecules if true
+#crystal_fname   '/para/1567104.cif'        #crystal structure file
+xyz_file1         mole1.dat        #sublattice 1 file
+xyz_file2         mole2.dat        #sublattice 2 file
+#xyz_file3         '/mole3.dat'        #sublattice 3 file
+#xyz_file4         '/para/mole4.dat'        #sublattice 4 file
+#EOF
