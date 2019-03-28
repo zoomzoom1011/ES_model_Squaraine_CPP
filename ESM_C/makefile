@@ -1,7 +1,7 @@
 src     = esm_c.cpp
 exes    = esm_c.exe
 ICPC    = icpc
-INC     = -I$(CUDADIR)/include -I$(MKLROOT)/include
+INC     = -I$(MKLROOT)/include
 FLAGS	= -DMKL_ILP64 -DADD_
 LIBS    = -lmkl_intel_ilp64 -lmkl_intel_thread -lmkl_core -lgomp -lpthread -lm -ldl
 LIBDIRS = -L/opt/intel/mkl/lib
