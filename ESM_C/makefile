@@ -1,4 +1,4 @@
-src     = esm_c.cpp
+src     = sub/esm_c.cpp
 exes    = esm_c.exe
 ICPC    = icpc
 INC     = -I$(MKLROOT)/include
